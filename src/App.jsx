@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Papa from 'papaparse';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { read, utils } from 'xlsx';
@@ -45,20 +44,7 @@ function App() {
 
 
   function parseCSV(csvText) {
-    // Parse CSV here and return an array of objects
-    // You can use libraries like csv-parser or papaparse here if needed
-    // Example using csv-parser (install it first: npm install csv-parser)
-    // import csvParser from 'csv-parser';
 
-    // const results = [];
-    // csvParser()
-    //   .on('data', (data) => results.push(data))
-    //   .on('end', () => console.log(results))
-    //   .write(csvText);
-
-    // return results;
-
-    // For simplicity, let's assume a basic parsing logic without a library
     const rows = csvText.split('\n');
     const headers = rows[0].split(',');
     const data = [];
