@@ -17,7 +17,7 @@ function App() {
   };
   async function fetchData() {
     try {
-      const response = await fetch('../src/export29913.xlsx');
+      const response = await fetch('../public/export29913.xlsx');
       const arrayBuffer = await response.arrayBuffer();
 
       // const data = new Uint8Array(arrayBuffer);
